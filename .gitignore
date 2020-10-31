@@ -1,0 +1,9 @@
+#System workbench
+.settings/
+Debug/
+Release/
+.mxproject
+*.log
+*.launch
+*.bak
+mx.scratch
