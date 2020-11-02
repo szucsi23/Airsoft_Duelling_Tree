@@ -1,4 +1,5 @@
 #include "statemachine.h"
+#include "panels.h"
 
 main_states_t msm_state = msSTARTUP;
 
@@ -11,6 +12,10 @@ void main_statemachine(){
 
 			break;
 		case msGAME:
+			for (uint8_t i = 0; i < NR_OF_PANELS; ++i) {
+				panels[i].hit_detected = false;
+				panels[i].nr_of_hits = 0;
+			}
 
 			break;
 		case msEXIT:
