@@ -1,5 +1,5 @@
 #include "panels.h"
-#include "stm32l0xx_hal_gpio.h"
+#include "stm32l0xx_hal.h"
 
 panel_t panels[NR_OF_PANELS];
 
